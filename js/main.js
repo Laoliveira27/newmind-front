@@ -72,3 +72,19 @@ if (formContato) {
     mensagem.value = "";
   });
 }
+
+const menuToggle = document.querySelector('.menu-toggle');
+const nav = document.querySelector('.nav');
+
+if (menuToggle && nav) {
+  menuToggle.addEventListener('click', () => {
+    document.body.classList.toggle('menu-open');
+  });
+
+  const navLinks = nav.querySelectorAll('a');
+  navLinks.forEach(link => {
+    link.addEventListener('click', () => {
+      document.body.classList.remove('menu-open');
+    });
+  });
+}
