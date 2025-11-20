@@ -191,7 +191,6 @@ body {
   color: #0f7c5c;
 }
 
-/* SEÇÕES */
 .section {
   padding: 3rem 0;
 }
@@ -219,7 +218,6 @@ body {
   align-items: flex-start;
 }
 
-/* CARDS */
 .cards {
   display: grid;
   grid-template-columns: repeat(3, minmax(0, 1fr));
@@ -279,7 +277,6 @@ body {
   margin-bottom: 0.75rem;
 }
 
-/* FOOTER */
 .footer {
   padding: 1rem 0 1.2rem;
   background: #0f7c5c;
@@ -374,4 +371,33 @@ body {
 
 .links-integrante a:hover {
   text-decoration: underline;
+}
+
+.contact-form {
+  display: flex;
+  flex-direction: column;
+  gap: 0.75rem;
+  background: #ffffff;
+  border-radius: 12px;
+  padding: 1.3rem 1.4rem;
+  border: 1px solid #d7e9df;
+  box-shadow: 0 10px 24px rgba(0, 0, 0, 0.03);
+}
+
+.contact-form label {
+  font-size: 0.9rem;
+  color: #39584a;
+  display: flex;
+  flex-direction: column;
+  gap: 0.2rem;
+}
+
+.contact-form input,
+.contact-form select,
+.contact-form textarea {
+  border-radius: 8px;
+  border: 1px solid #cbe1d6;
+  padding: 0.55rem 0.6rem;
+  font-family: inherit;
+  font-size: 0.9rem;
 }

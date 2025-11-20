@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>NewMind – Contato</title>
+
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link
+    href="https://fonts.googleapis.com/css2?family=Epilogue:wght@300;400;500;600;700&display=swap"
+    rel="stylesheet"
+  />
+
+  <link rel="stylesheet" href="./css/style.css" />
+</head>
+<body>
+  <header class="header">
+    <div class="container header-content">
+      <div class="logo-area">
+        <img src="./LogoNewMind.png" alt="Logo NewMind" class="logo" />
+      </div>
+
+      <nav class="nav">
+        <a href="index.html">Home</a>
+        <a href="sobre.html">Sobre</a>
+        <a href="faq.html">FAQ</a>
+        <a href="contato.html" class="active">Contato</a>
+        <a href="integrantes.html">Integrantes</a>
+      </nav>
+    </div>
+  </header>
+
+  <main class="section">
+    <div class="container">
+      <h1 class="page-title">Fale com o time NewMind</h1>
+
+      <div class="section-grid">
+        <div>
+          <p>
+            Preencha o formulário ao lado para falar com o grupo responsável
+            pelo projeto NewMind. Retornaremos o contato o mais breve possível.
+          </p>
+
+          <p>
+            Este canal é voltado à apresentação acadêmica da solução,
+            dúvidas sobre o funcionamento do protótipo e sugestões de melhoria.
+          </p>
+        </div>
+
+        <form class="contact-form" id="contact-form">
+          <label>
+            Nome completo
+            <input type="text" name="nome" id="nome" required />
+          </label>
+
+          <label>
+            E-mail
+            <input type="email" name="email" id="email" required />
+          </label>
+
+          <label>
+            Tipo de interesse
+            <select name="tipo" id="tipo" required>
+              <option value="">Selecione</option>
+              <option value="empresa">Sou de uma empresa</option>
+              <option value="clinica">Sou de uma clínica de psicologia</option>
+              <option value="ex-colaborador">Sou ex-colaborador</option>
+              <option value="outro">Outro</option>
+            </select>
+          </label>
+
+          <label>
+            Mensagem
+            <textarea name="mensagem" id="mensagem" rows="4" required></textarea>
+          </label>
+
+          <button type="submit" class="btn primary">Enviar mensagem</button>
+
+          <p class="form-feedback" id="form-feedback"></p>
+        </form>
+      </div>
+    </div>
+  </main>
+
+  <footer class="footer">
+    <div class="container footer-content">
+      <span>NewMind · 2025</span>
+      <span>FIAP · 1TDSPR-2025</span>
+    </div>
+  </footer>
+
+  <script src="./js/main.js"></script>
+</body>
+</html>
