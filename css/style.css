@@ -572,6 +572,48 @@ body {
   margin-top: 0.6rem;
 }
 
+.menu-toggle {
+  display: none;
+  border: none;
+  background: transparent;
+  font-size: 1.5rem;
+  color: #e9fff8;
+  cursor: pointer;
+}
+
+body.menu-open .nav {
+  display: flex;
+}
+
+@media (max-width: 900px) {
+  .header-content {
+    gap: 0.75rem;
+  }
+
+  .menu-toggle {
+    display: block;
+  }
+
+  .nav {
+    display: none;
+    position: absolute;
+    top: 56px;              /* altura do header */
+    right: 0;
+    left: 0;
+    background: #0f7c5c;
+    padding: 0.75rem 1.2rem 1rem;
+    flex-direction: column;
+    gap: 0.5rem;
+    box-shadow: 0 10px 24px rgba(0, 0, 0, 0.2);
+  }
+
+  .nav a {
+    margin: 0;
+    padding: 0.35rem 0;
+    font-size: 0.95rem;
+  }
+}
+
 @media (max-width: 900px) {
   .painel-lista {
     grid-template-columns: minmax(0, 1fr);
