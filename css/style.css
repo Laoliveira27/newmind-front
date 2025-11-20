@@ -401,3 +401,81 @@ body {
   font-family: inherit;
   font-size: 0.9rem;
 }
+
+.diario-form {
+  display: flex;
+  flex-direction: column;
+  gap: 0.75rem;
+  background: #ffffff;
+  border-radius: 12px;
+  padding: 1.3rem 1.4rem;
+  border: 1px solid #d7e9df;
+  box-shadow: 0 10px 24px rgba(0, 0, 0, 0.03);
+}
+
+.diario-form label {
+  font-size: 0.9rem;
+  color: #39584a;
+  display: flex;
+  flex-direction: column;
+  gap: 0.2rem;
+}
+
+.diario-form input[type="date"],
+.diario-form textarea,
+.diario-form input[type="range"] {
+  border-radius: 8px;
+  border: 1px solid #cbe1d6;
+  padding: 0.55rem 0.6rem;
+  font-family: inherit;
+  font-size: 0.9rem;
+}
+
+.humor-opcoes {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.4rem;
+  margin-top: 0.3rem;
+}
+
+.humor-btn {
+  border-radius: 999px;
+  border: 1px solid #cbe1d6;
+  padding: 0.35rem 0.6rem;
+  font-size: 0.85rem;
+  background: #f4faf7;
+  cursor: pointer;
+}
+
+.humor-btn.selecionado {
+  border-color: #0f7c5c;
+  background: #0f7c5c;
+  color: #ffffff;
+}
+
+.registros-diario {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 1.2rem;
+  margin-top: 1rem;
+}
+
+.registro {
+  background: #ffffff;
+  border-radius: 12px;
+  padding: 1rem 1.1rem;
+  border: 1px solid #d7e9df;
+  font-size: 0.9rem;
+}
+
+.registro h3 {
+  font-size: 0.95rem;
+  margin-bottom: 0.4rem;
+  color: #0c4e39;
+}
+
+@media (max-width: 900px) {
+  .registros-diario {
+    grid-template-columns: minmax(0, 1fr);
+  }
+}

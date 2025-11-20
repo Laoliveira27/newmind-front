@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>NewMind – Diário Emocional</title>
+
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link
+    href="https://fonts.googleapis.com/css2?family=Epilogue:wght@300;400;500;600;700&display=swap"
+    rel="stylesheet"
+  />
+
+  <link rel="stylesheet" href="./css/style.css" />
+</head>
+<body>
+  <header class="header">
+    <div class="container header-content">
+      <div class="logo-area">
+        <img src="./LogoNewMind.png" alt="Logo NewMind" class="logo" />
+          </div>
+
+      <nav class="nav">
+        <a href="index.html">Home</a>
+        <a href="sobre.html">Sobre</a>
+        <a href="faq.html">FAQ</a>
+        <a href="contato.html">Contato</a>
+        <a href="integrantes.html">Integrantes</a>
+      </nav>
+    </div>
+  </header>
+
+  <main class="section section-alt">
+    <div class="container">
+      <h1 class="page-title">Diário Emocional</h1>
+
+      <div class="section-grid">
+        <div>
+          <p>
+            Aqui o ex-colaborador registra diariamente como está se sentindo,
+            quais são suas principais emoções e pensamentos no período de
+            transição após o desligamento.
+          </p>
+          <p>
+            Essas informações são analisadas com apoio de IA e encaminhadas
+            para as clínicas parceiras, que podem acompanhar sinais de risco
+            e oferecer apoio psicológico quando necessário.
+          </p>
+        </div>
+
+        <form class="diario-form">
+          <label>
+            Data de hoje
+            <input type="date" name="data" id="data-diario" required />
+          </label>
+
+          <label>
+            Como você está se sentindo hoje?
+            <div class="humor-opcoes">
+              <button type="button" class="humor-btn" data-humor="muito-bem">😀 Muito bem</button>
+              <button type="button" class="humor-btn" data-humor="bem">🙂 Bem</button>
+              <button type="button" class="humor-btn" data-humor="neutro">😐 Neutro</button>
+              <button type="button" class="humor-btn" data-humor="mal">☹️ Mal</button>
+              <button type="button" class="humor-btn" data-humor="muito-mal">😞 Muito mal</button>
+            </div>
+            <input type="hidden" name="humorSelecionado" id="humorSelecionado" required />
+          </label>
+
+          <label>
+            Descreva seu dia em poucas palavras
+            <textarea name="descricao" id="descricao-diario" rows="3" required></textarea>
+          </label>
+
+          <label>
+            Nível de energia hoje
+            <input type="range" name="energia" id="energia-diario" min="0" max="10" value="5" />
+          </label>
+
+          <button type="submit" class="btn primary">Registrar dia</button>
+
+          <p class="form-feedback" id="feedback-diario"></p>
+        </form>
+      </div>
+
+      <section class="section">
+        <h2>Registros recentes (simulação)</h2>
+        <div class="registros-diario">
+          <article class="registro">
+            <h3>Ontem</h3>
+            <p><strong>Humor:</strong> Neutro</p>
+            <p><strong>Resumo:</strong> Dia de adaptação. Fiz alguns currículos e revisei meu LinkedIn.</p>
+          </article>
+          <article class="registro">
+            <h3>2 dias atrás</h3>
+            <p><strong>Humor:</strong> Mal</p>
+            <p><strong>Resumo:</strong> Me senti inseguro(a) com o futuro profissional. Procurei conteúdos de apoio.</p>
+          </article>
+          <article class="registro">
+            <h3>3 dias atrás</h3>
+            <p><strong>Humor:</strong> Bem</p>
+            <p><strong>Resumo:</strong> Consegui organizar minha rotina e conversar com pessoas de confiança.</p>
+          </article>
+        </div>
+      </section>
+    </div>
+  </main>
+
+  <footer class="footer">
+    <div class="container footer-content">
+      <span>NewMind · 2025</span>
+      <span>FIAP · 1TDSPR-2025</span>
+    </div>
+  </footer>
+
+  <script src="./js/main.js"></script>
+</body>
+</html>
