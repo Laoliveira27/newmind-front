@@ -619,3 +619,61 @@ body.menu-open .nav {
     grid-template-columns: minmax(0, 1fr);
   }
 }
+
+/* ============================= */
+/* RESPONSIVIDADE MOBILE */
+/* Ajustes gerais abaixo de 600px */
+/* ============================= */
+@media (max-width: 600px) {
+
+  /* Espaçamento geral */
+  .section {
+    padding: 2rem 0;
+  }
+
+  .section-grid {
+    grid-template-columns: 1fr;
+    gap: 1.5rem;
+  }
+
+  .page-title {
+    font-size: 1.6rem;
+    text-align: center;
+  }
+
+  p {
+    font-size: 0.95rem;
+  }
+
+  .registros-diario {
+    grid-template-columns: 1fr;
+    gap: 1rem;
+  }
+
+  .humor-opcoes {
+    justify-content: center;
+  }
+
+  .painel-lista {
+    grid-template-columns: 1fr;
+    gap: 1rem;
+  }
+
+  .painel-filtros {
+    width: 100%;
+  }
+
+  .painel-card,
+  .registro {
+    font-size: 0.85rem;
+  }
+
+  h2 {
+    font-size: 1.2rem;
+    text-align: center;
+  }
+
+  .container {
+    width: 92%;
+  }
+}
