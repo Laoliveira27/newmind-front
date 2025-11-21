@@ -677,3 +677,62 @@ body.menu-open .nav {
     width: 92%;
   }
 }
+
+/* ============================= */
+/* Integrantes */
+/* ============================= */
+.integrantes-grid {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 1.5rem;
+}
+
+.integrante-card {
+  background: #ffffff;
+  border: 1px solid #d7e9df;
+  border-radius: 14px;
+  padding: 1.2rem;
+  text-align: center;
+  box-shadow: 0 6px 20px rgba(0,0,0,0.04);
+}
+
+.integrante-card img {
+  width: 130px;
+  height: 130px;
+  border-radius: 50%;
+  object-fit: cover;
+  margin-bottom: 0.8rem;
+  border: 3px solid #0f7c5c;
+}
+
+.integrante-card h3 {
+  font-size: 1.05rem;
+  margin-bottom: 0.25rem;
+  color: #0c4e39;
+}
+
+.integrante-card p {
+  font-size: 0.9rem;
+  margin-bottom: 0.3rem;
+  color: #39584a;
+}
+
+.integrante-card .funcao {
+  font-size: 0.85rem;
+  font-weight: 500;
+  color: #0f7c5c;
+  display: inline-block;
+}
+
+@media (max-width: 900px) {
+  .integrantes-grid {
+    grid-template-columns: 1fr 1fr;
+  }
+}
+
+@media (max-width: 600px) {
+  .integrantes-grid {
+    grid-template-columns: 1fr;
+  }
+}
+
