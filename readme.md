@@ -2,7 +2,6 @@
 
 Uma solução digital desenvolvida para oferecer acompanhamento emocional a ex-colaboradores desligados por transformação tecnológica, conectando empresas, clínicas de psicologia e pessoas — com apoio de Inteligência Artificial e cuidado humano.
 
-> Projeto acadêmico desenvolvido para a disciplina **Software Engineering and Business Model** – FIAP
 
 ---
 
@@ -21,9 +20,9 @@ Promover um processo de desligamento mais **humano, responsável e alinhado a ES
 
 Ex-colaboradores demitidos devido à automação e modernização corporativa, que:
 
-- sentem dificuldades emocionais após o desligamento;
-- precisam de acolhimento especializado;
-- buscam apoio para reorganizar sua vida e carreira.
+- sentem dificuldades emocionais após o desligamento
+- precisam de acolhimento especializado
+- buscam apoio para reorganizar sua vida e carreira
 
 ---
 
@@ -69,9 +68,32 @@ Ex-colaboradores demitidos devido à automação e modernização corporativa, q
 | **Lucas Marcelino Pompeu** | 567010 | Pitch & Business Model | [LinkedIn](#) | [GitHub](#) |
 | **Renan Lima Santos** | 568321 | Documentação & Research | [LinkedIn](#) | [GitHub](#) |
 
-> *As contribuições de cada integrante estão registradas no histórico do repositório.*
-
 ---
 
 ## 📂 Estrutura do Projeto
 
+```text
+/
+├─ index.html
+├─ diario.html
+├─ painel-clinica.html
+├─ perguntas-frequentes.html
+├─ contato.html
+├─ formas.html
+├─ sobre.html
+├─ CSS/
+│  └─ style.css
+├─ js/
+│  └─ script.js
+├─ assets/
+│  ├─ imagens do projeto
+│  └─ icones e midias
+└─ readme.md
+
+```
+
+## 🔗 Repositorio no GitHub
+
+Codigo-fonte completo do projeto front-end:
+
+ https://github.com/Laoliveira27/newmind-front
